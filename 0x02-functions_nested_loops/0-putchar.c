@@ -9,7 +9,7 @@
 int main(void)
 {
 char st[] = "_putchar";
-int ch
+int ch;
 for (ch = 0; ch < 8; ch++)
 putchar(rt[]);
 putchar('\n');
