@@ -6,7 +6,7 @@
  * @a: first input
  * @b: second input
  *
- * Return: result
+ * Return: Always 0
 */
 
 int mul(int a, int b);
