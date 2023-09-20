@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 
 	/*iterate through each src array without the null byte*/
 	for (b = 0 ; src[b] ; b++)
-		/*append src[b] to dest[a] while overwritting the null byte in desr*/
+		/*append src[b] to dest[a] while overwritting the null byte in dest*/
 		dest[a++] = src[b];
 
 return (dest);
