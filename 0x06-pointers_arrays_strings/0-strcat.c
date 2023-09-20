@@ -14,14 +14,19 @@ char *_strcat(char *dest, char *src)
 	int a, b;
 
 	a = 0;
-	/*find the size of dest array*/
-	while (dest[a])
+	while (dest[a] != '\0')
+	{
 		a++;
+	}
+	b = 0
+	while (src[b] != '\0')
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
+	}
 
-	/*iterate through each src array without the null byte*/
-	for (b = 0 ; src[b] ; b++)
-		/*append src[b] to dest[a] while overwritting the null byte in dest*/
-		dest[a++] = src[b];
+	dest[a] = '\0';
 
 return (dest);
 }
