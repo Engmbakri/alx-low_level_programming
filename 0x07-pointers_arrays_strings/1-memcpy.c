@@ -5,7 +5,7 @@ include "main.h"
  * @dest: memory area
  * @src: source
  * @n: length of src to be copied
- * Return: pointer to desit
+ * Return: the pointer to dest
 */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
