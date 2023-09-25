@@ -5,14 +5,14 @@ include "main.h"
  * @dest: memory area
  * @src: source
  * @n: length of src to be copied
- * Return: pointer to dest
+ * Return: pointer to desit
 */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0 ; i < n ; i++)
+	for (i = 0 ; i <= n ; i++)
 	{
 		dest[i] = scr[i];
 	}
