@@ -1,5 +1,5 @@
 #include <stdio.h>
-			>
+
 /**
  * main - prints all arguments it receives
  * @argc: int
@@ -15,5 +15,6 @@ int main(int argc, char const *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
+
 	return (0);
 }
