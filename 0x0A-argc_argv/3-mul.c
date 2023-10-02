@@ -7,7 +7,7 @@
  * Return: 0-success, non-zero-fail
 */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	int mul;
 
@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 
