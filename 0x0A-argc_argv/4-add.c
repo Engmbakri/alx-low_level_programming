@@ -5,7 +5,7 @@
  * main - the entry point of the program
  * @argc: the number of command-line
  * @argv: array of strings containing the command-line
- * Return: 0
+ * Return: Always 0
 */
 
 int main(int argc, char *argv[])
