@@ -3,7 +3,7 @@
 /**
  * *_strdup - returns a pointer to a new string
  * @str: string
- * Return: 0
+ * Return: Null or m
 */
 
 
