@@ -3,7 +3,7 @@
 /**
  * *_strdup - returns a pointer to a new string
  * @str: string
- * Return: Null or m
+ * Return: 0
 */
 
 
@@ -12,8 +12,8 @@ char *_strdup(char *str)
 	int i = 0, size = 0;
 	char *m;
 
-	if (str == Null)
-		return (Null);
+	if (str == NULL)
+		return (NULL);
 	for ( ; str[size] != '\0' ; size++)
 	;
 
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	m = malloc(size * sizeof(*str) + 1);
 
 	if (m == 0)
-		return (Null);
+		return (NULL);
 	else
 	{
 		for (; i < size ; i++)
