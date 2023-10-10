@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - print name of source file
@@ -7,6 +7,6 @@
 
 int main(void)
 {
-	printf("%s/n", __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
