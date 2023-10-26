@@ -8,25 +8,18 @@
 
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
-	{
-		printf("0");
-		return;
-	}
-	unsigned long int bit = 1UL << (sizeof(unsigned long int) * 8 - 1);
-	int Zeros = 1;
+	int mask = sizeof(n) * 8, printed = 0;
 
-	while (bit > 0)
+	while (mask)
 	{
-		if ((n & bit) != 0)
+		if (n & 1L << --mask)
 		{
-			Zeros = 0;
-			printf("1");
+			_putchar('1');
+			printed++;
 		}
-		else if (!Zeros)
-		{
-			printf("0");
-		}
-		bit >>= 1;
+	else if (printed)
+		_putchar('0');
 	}
+	if (!printed)
+		_putchar('0');
 }
